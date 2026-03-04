@@ -1,55 +1,35 @@
-# Jeu-de-nombre
-# 🎯 Jeu du Nombre Mystère en Python
+# 🎯 Jeu du Nombre Mystère – Version Avancée
 
 ## 📌 Description
 
-Ce projet est une implémentation en Python d’un jeu interactif en ligne de commande.
+Ce projet est une version améliorée du jeu du Nombre Mystère en Python.
+Le programme génère un nombre aléatoire que le joueur doit deviner en un nombre limité de tentatives selon le niveau de difficulté choisi.
 
-Le programme choisit un nombre secret et l'utilisateur doit le deviner.
-
----
-
-## 📝 Sujet du projet
-
-### Instructions :
-
-- Importer la fonction `randint` du module `random`
-- Générer un nombre entier aléatoire entre 1 et 100
-- Créer une boucle `while` qui continue tant que le joueur n’a pas trouvé
-- Utiliser un bloc `try...except ValueError` pour sécuriser l’entrée utilisateur
-- Indiquer si le nombre recherché est plus grand ou plus petit
-- Afficher un message de félicitations lorsque le nombre est trouvé
-
-### Pour aller plus loin :
-
-- Compter le nombre de tentatives
-- Limiter le nombre d’essais (ex : 10 tentatives maximum)
+Ce projet met en œuvre une structure modulaire avec fonctions, gestion des erreurs et système de score.
 
 ---
 
-## ⚙️ Fonctionnalités implémentées
+## 🎮 Fonctionnalités
 
-✔ Génération d’un nombre aléatoire entre 1 et 100  
+✔ Choix du niveau de difficulté  
+✔ Génération d’un nombre aléatoire  
+✔ Nombre limité de tentatives  
+✔ Indications dynamiques : "C'est plus !" / "C'est moins !"  
+✔ Système de score basé sur les tentatives restantes  
 ✔ Gestion des erreurs de saisie utilisateur  
-✔ Indication "C'est plus !" ou "C'est moins !"  
-✔ Version avec nombre d’essais illimité  
-✔ Version avec 10 tentatives maximum  
 
 ---
 
-## 🛠️ Technologies utilisées
+## 🧠 Niveaux de difficulté
 
-- Python 3
-- Module `random`
-- Structures conditionnelles
-- Boucles `while`
-- Gestion d'exceptions (`try/except`)
+| Niveau     | Intervalle      | Tentatives |
+|------------|----------------|------------|
+| Facile     | 1 – 50         | 15         |
+| Moyen      | 1 – 100        | 10         |
+| Difficile  | 1 – 500        | 7          |
 
 ---
 
-## ▶️ Exécution
+## 🏆 Système de score
 
-Cloner le repository puis exécuter :
-
-```bash
-python nombre_mystere.py
+Le score est calculé en fonction du nombre de tentatives restantes :
