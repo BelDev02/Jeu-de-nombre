@@ -90,4 +90,4 @@ Cette organisation rend le code plus clair, maintenable et évolutif.
 Cloner le repository puis exécuter :
 
 ```bash
-python nombre_mystere.py
+python Nombre_mystere.py
